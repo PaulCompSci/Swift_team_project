@@ -51,6 +51,7 @@
 		DAD0F24A295D4819007013BE /* typing_speed_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = typing_speed_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0F24E295D4819007013BE /* typing_speed_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITests.swift; sourceTree = "<group>"; };
 		DAD0F250295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAD0F25F295D4D24007013BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		DAD0F21E295D4818007013BE = {
 			isa = PBXGroup;
 			children = (
+				DAD0F25F295D4D24007013BE /* README.md */,
 				DAD0F229295D4818007013BE /* typing_speed_test */,
 				DAD0F243295D4819007013BE /* typing_speed_testTests */,
 				DAD0F24D295D4819007013BE /* typing_speed_testUITests */,
