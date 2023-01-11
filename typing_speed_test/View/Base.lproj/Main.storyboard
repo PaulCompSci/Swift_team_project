@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpPageViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="63.768115942028992" y="3.3482142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Cci-5h-hUc">
             <objects>
-                <viewController id="FhW-e7-p5o" sceneMemberID="viewController">
+                <viewController id="FhW-e7-p5o" customClass="MainViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kWz-AJ-kWH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-bY-Yu4">
+                                <rect key="frame" x="32" y="104" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title=" back"/>
+                                <connections>
+                                    <action selector="backToPreviousScreenBUTTON:" destination="FhW-e7-p5o" eventType="touchUpInside" id="0JP-ZS-mj8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ytX-at-yOy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -100,12 +109,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYN-q2-ntr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="370"/>
+            <point key="canvasLocation" x="1050.7246376811595" y="369.64285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In Page View Controller-->
         <scene sceneID="Ijb-Ih-ggN">
             <objects>
-                <viewController id="2nQ-dp-lvR" sceneMemberID="viewController">
+                <viewController id="2nQ-dp-lvR" customClass="SignInPageViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mti-b2-jeh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,6 +147,15 @@
                                     <segue destination="FhW-e7-p5o" kind="presentation" modalPresentationStyle="fullScreen" id="VLx-vD-x4J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ld-Se8">
+                                <rect key="frame" x="38" y="71" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title="back "/>
+                                <connections>
+                                    <action selector="backToSignUpPageBUTTON:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="cMJ-11-SPx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0L-Xl-Lu2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -150,9 +168,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ote-QU-tRy"/>
+        <segue reference="VLx-vD-x4J"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

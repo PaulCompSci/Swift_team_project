@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func SignUpButton(_ sender: UIButton) {
+        print("this button is working") 
         
     }
     

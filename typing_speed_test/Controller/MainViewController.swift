@@ -16,6 +16,10 @@ class MainViewController: UIViewController {
     }
     
 
+    @IBAction func backToPreviousScreenBUTTON(_ sender: Any) {
+        self.dismiss(animated: true,completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 
