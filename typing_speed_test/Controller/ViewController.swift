@@ -7,13 +7,16 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func SignUpButton(_ sender: UIButton) {
+        
+    }
+    
 }
 
