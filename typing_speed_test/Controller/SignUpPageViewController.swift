@@ -7,28 +7,41 @@
 
 import UIKit
 
-class SignUpPageViewController: UIViewController {
+class SignUpPageViewController: UIViewController{
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     @IBOutlet weak var usernameError: UILabel!
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
-    
-    
     @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //removing keyboard while tapping on empty place
+        usernameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        
         resetForm()
-        // Do any additional setup after loading the view.
+        
     }
 
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
+    
     
     @IBAction func usernameChanged(_ sender: Any) {
+        if (emailTextField.text == ""){
+            emailError.text = "*Required"
+        }
+        
         if let username = usernameTextField.text{
             if let errorMessage = invalidUsername(username){
                 usernameError.text = errorMessage
@@ -48,6 +61,10 @@ class SignUpPageViewController: UIViewController {
     
     @IBAction func emailChanged(_ sender: Any) {
         
+        if (emailTextField.text == ""){
+            emailError.text = "*Required"
+        }
+        
         if let email = emailTextField.text{
             if let errorMessage = invalidEmail(email){
                 emailError.text = errorMessage
@@ -57,14 +74,15 @@ class SignUpPageViewController: UIViewController {
             }
             
         }
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
         
         checkForValidForm()
     }
     
     @IBAction func passwordChanged(_ sender: Any) {
+        
+        if (emailTextField.text == ""){
+            emailError.text = "*Required"
+        }
         
         if let password = passwordTextField.text{
             if let errorMessage = invalidPassword(password){
@@ -177,3 +195,14 @@ class SignUpPageViewController: UIViewController {
     }
 }
 
+extension SignUpPageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    //Check if there is any other text-field in the view whose tag is +1 greater than the current text-field on which the return key was pressed. If yes → then move the cursor to that next text-field. If No → Dismiss the keyboard
+    if let nextField = self.view.viewWithTag(textField.tag + 1) as? UITextField {
+    nextField.becomeFirstResponder()
+    } else {
+    textField.resignFirstResponder()
+    }
+    return false
+    }
+}
