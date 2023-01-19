@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA49F253296E802100162C15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49F252296E802100162C15 /* MainViewController.swift */; };
+		DA6475FE2979C46300326534 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6475FD2979C46300326534 /* validation.swift */; };
 		DAD0F22B295D4818007013BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22A295D4818007013BE /* AppDelegate.swift */; };
 		DAD0F22D295D4818007013BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22C295D4818007013BE /* SceneDelegate.swift */; };
 		DAD0F22F295D4818007013BE /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22E295D4818007013BE /* SignUpPageViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewController.swift; sourceTree = "<group>"; };
 		DA49F252296E802100162C15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DA6475FD2979C46300326534 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
 		DAD0F227295D4818007013BE /* typing_speed_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = typing_speed_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0F22A295D4818007013BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD0F22C295D4818007013BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DA6475FF2979C46800326534 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA6475FD2979C46300326534 /* validation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DAD0F21E295D4818007013BE = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 				DAD0F22C295D4818007013BE /* SceneDelegate.swift */,
 				DA49F251296E7DE200162C15 /* Controller */,
 				DA49F250296E7DC900162C15 /* View */,
+				DA6475FF2979C46800326534 /* Model */,
 				DAD0F236295D4819007013BE /* Assets.xcassets */,
 				DAD0F238295D4819007013BE /* LaunchScreen.storyboard */,
 				DAD0F23B295D4819007013BE /* Info.plist */,
@@ -288,6 +299,7 @@
 				DA49F253296E802100162C15 /* MainViewController.swift in Sources */,
 				DAD0F235295D4818007013BE /* typing_speed_test.xcdatamodeld in Sources */,
 				DAD0F22F295D4818007013BE /* SignUpPageViewController.swift in Sources */,
+				DA6475FE2979C46300326534 /* validation.swift in Sources */,
 				DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */,
 				DAD0F22B295D4818007013BE /* AppDelegate.swift in Sources */,
 				DAD0F22D295D4818007013BE /* SceneDelegate.swift in Sources */,

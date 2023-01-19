@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SignUpPageViewController: UIViewController{
 
     @IBOutlet weak var usernameTextField: UITextField!
@@ -16,6 +17,7 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
+    let formValidation = FormValidation() ;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class SignUpPageViewController: UIViewController{
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
         
-        resetForm()
+       resetForm()
         
     }
 
@@ -43,7 +45,7 @@ class SignUpPageViewController: UIViewController{
         }
         
         if let username = usernameTextField.text{
-            if let errorMessage = invalidUsername(username){
+            if let errorMessage = formValidation.invalidUsername(username){
                 usernameError.text = errorMessage
                 usernameError.isHidden = false
             }else{
@@ -54,7 +56,7 @@ class SignUpPageViewController: UIViewController{
         if (usernameTextField.text == ""){
             usernameError.text = "*Required"
         }
-        checkForValidForm()
+       checkForValidForm()
     }
     
     
@@ -66,7 +68,7 @@ class SignUpPageViewController: UIViewController{
         }
         
         if let email = emailTextField.text{
-            if let errorMessage = invalidEmail(email){
+            if let errorMessage = formValidation.invalidEmail(email){
                 emailError.text = errorMessage
                 emailError.isHidden = false
             }else{
@@ -85,7 +87,7 @@ class SignUpPageViewController: UIViewController{
         }
         
         if let password = passwordTextField.text{
-            if let errorMessage = invalidPassword(password){
+            if let errorMessage = formValidation.invalidPassword(password){
                 passwordError.text = errorMessage
                 passwordError.isHidden = false
             }else{
@@ -99,11 +101,14 @@ class SignUpPageViewController: UIViewController{
         checkForValidForm()
     }
     
-    
     @IBAction func signUpButtonPressed(_ sender: Any) {
         resetForm()
     }
     
+
+    /*
+     * Note: this reset form only can be used for signUpPage
+     */
     func resetForm(){
         signUpButton.isEnabled = false
         
@@ -121,6 +126,9 @@ class SignUpPageViewController: UIViewController{
         
     }
     
+    /*
+     * Note : function below only can be use for sign  up page
+     */
     func checkForValidForm(){
         if (emailError.isHidden && usernameError.isHidden && passwordError.isHidden){
             signUpButton.isEnabled = true ;
@@ -130,69 +138,6 @@ class SignUpPageViewController: UIViewController{
         }
     }
     
-    func invalidEmail(_ value :String) -> String?{
-        let regularExpression =  "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
-        if !predicate.evaluate(with: value){
-            return  "Invalid Email Address"
-        }
-        return nil
-    }
-    
-    func invalidPassword(_ value :String) -> String?{
-        
-        if (value.count < 8){
-            return "Password must be at least 8 characters"
-        }
-        if (containDigit(value)){
-            return "Password must contain at least one digit  "
-        }
-        if(containLowercase(value)){
-            return "Password must contain at least 1 lowercase character"
-        }
-        if (containUppercase(value)){
-            return "Password must contain at least 1 uppercase Character"
-        }
-        return nil
-    }
-    func invalidUsername(_ value :String) -> String?{
-        if (value.count < 4){
-            return "Username must have at least 4 character"
-        }
-        if(containSpecialCharacter(value)){
-            return "Username cannot contain special characters"
-        }
-        return nil
-    }
-    
-    
-    
-    
-    func containDigit(_  value: String? ) -> Bool{
-        let regularExpression =  ".*[0-9]+.*"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
-        return !predicate.evaluate(with: value)
-    }
-    func containLowercase(_  value: String? ) -> Bool{
-        let regularExpression =  ".*[a-z]+.*"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
-        return !predicate.evaluate(with: value)
-    }
-    func containUppercase(_  value: String? ) -> Bool{
-        let regularExpression =  ".*[A-Z]+.*"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
-        return !predicate.evaluate(with: value)
-    }
-    
-    func containSpecialCharacter(_ value: String? ) -> Bool{
-        let characterset = CharacterSet(charactersIn:
-           "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
-        if (value?.rangeOfCharacter(from: characterset.inverted)) != nil{
-            return true
-        }
-        
-        return false
-    }
 }
 
 extension SignUpPageViewController: UITextFieldDelegate {

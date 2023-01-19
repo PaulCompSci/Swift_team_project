@@ -45,7 +45,7 @@
                                 <rect key="frame" x="88" y="358" width="215" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <action selector="emailChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="HrR-id-FfA"/>
                                 </connections>
@@ -93,7 +93,7 @@
                                 <rect key="frame" x="88" y="295" width="216" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <action selector="usernameChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="oRb-l6-w9P"/>
                                 </connections>
