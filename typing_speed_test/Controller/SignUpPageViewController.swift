@@ -17,7 +17,7 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
-    let formValidation = FormValidation() ;
+    let formValidation = FormValidation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,6 @@ class SignUpPageViewController: UIViewController{
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
-    
     
     
     @IBAction func usernameChanged(_ sender: Any) {
@@ -58,7 +57,6 @@ class SignUpPageViewController: UIViewController{
         }
        checkForValidForm()
     }
-    
     
     
     @IBAction func emailChanged(_ sender: Any) {
