@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBC6CCA297C8E3B006E699C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC6CC9297C8E3B006E699C /* GoogleService-Info.plist */; };
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA49F253296E802100162C15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49F252296E802100162C15 /* MainViewController.swift */; };
 		DA6475FE2979C46300326534 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6475FD2979C46300326534 /* validation.swift */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DBC6CC9297C8E3B006E699C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DBC6CCB297C8ECF006E699C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewController.swift; sourceTree = "<group>"; };
 		DA49F252296E802100162C15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DA6475FD2979C46300326534 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 		DAD0F21E295D4818007013BE = {
 			isa = PBXGroup;
 			children = (
+				1DBC6CC9297C8E3B006E699C /* GoogleService-Info.plist */,
 				DAD0F25F295D4D24007013BE /* README.md */,
 				DAD0F229295D4818007013BE /* typing_speed_test */,
 				DAD0F243295D4819007013BE /* typing_speed_testTests */,
@@ -150,6 +154,7 @@
 				DAD0F236295D4819007013BE /* Assets.xcassets */,
 				DAD0F238295D4819007013BE /* LaunchScreen.storyboard */,
 				DAD0F23B295D4819007013BE /* Info.plist */,
+				1DBC6CCB297C8ECF006E699C /* GoogleService-Info.plist */,
 				DAD0F233295D4818007013BE /* typing_speed_test.xcdatamodeld */,
 			);
 			path = typing_speed_test;
@@ -284,6 +289,7 @@
 			files = (
 				DAD0F23A295D4819007013BE /* LaunchScreen.storyboard in Resources */,
 				DAA0E9DD297B7862003C8FDE /* GoogleService-Info.plist in Resources */,
+				1DBC6CCA297C8E3B006E699C /* GoogleService-Info.plist in Resources */,
 				DAD0F237295D4819007013BE /* Assets.xcassets in Resources */,
 				DAD0F232295D4818007013BE /* Main.storyboard in Resources */,
 			);
