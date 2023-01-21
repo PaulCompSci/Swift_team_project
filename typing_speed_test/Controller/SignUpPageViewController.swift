@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class SignUpPageViewController: UIViewController{
@@ -110,7 +111,22 @@ class SignUpPageViewController: UIViewController{
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
-        resetForm()
+        // still not sure how to add in user name
+        
+         guard let email = emailTextField.text else{ return }
+         guard let password = passwordTextField.text else { return }
+        
+         Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+             if let e = error {
+                 print("error");
+             }
+             else{
+                 // go to homestreen or something
+                 self.performSegue(withIdentifier: "goToNext", sender: self)
+             }
+
+         }
+        
     }
     
 
