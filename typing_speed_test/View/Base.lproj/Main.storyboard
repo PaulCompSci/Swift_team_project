@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-aV-CAJ" userLabel="create account label">
-                                <rect key="frame" x="40" y="116" width="137" height="83"/>
+                                <rect key="frame" x="40" y="116" width="205" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WkR-ix-520" userLabel="Password TEXT FIELD">
-                                <rect key="frame" x="88" y="419" width="208" height="34"/>
+                                <rect key="frame" x="88" y="416" width="208" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
@@ -98,6 +98,15 @@
                                     <action selector="usernameChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="oRb-l6-w9P"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxt-Fi-ELD">
+                                <rect key="frame" x="256" y="416" width="50" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eye.circle.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="showPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKt-pQ-W6A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -216,6 +225,16 @@
                                 <color key="textColor" red="0.91976243260000001" green="0.011259747549999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2s-hj-jKL">
+                                <rect key="frame" x="268" y="431" width="50" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eye.circle.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="showPasswordButtonPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="j0t-G2-Cur"/>
+                                    <action selector="showPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQT-lZ-C9d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0L-Xl-Lu2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -235,10 +254,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLx-vD-x4J"/>
+        <segue reference="ote-QU-tRy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
+        <image name="eye.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

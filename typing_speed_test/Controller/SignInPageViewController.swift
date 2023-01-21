@@ -8,7 +8,7 @@
 import UIKit
 
 class SignInPageViewController: UIViewController {
-
+    
     
     let formValidation = FormValidation()
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,7 +16,7 @@ class SignInPageViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
-    
+    var showPasswordClicked = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +27,19 @@ class SignInPageViewController: UIViewController {
         resetForm()
     }
     
-    
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    
+    @IBAction func showPasswordButtonPressed(_ sender: UIButton) {
+            if  showPasswordClicked{
+                passwordTextField.isSecureTextEntry = false
+            }else {
+                passwordTextField.isSecureTextEntry = true
+            }
+            showPasswordClicked = !showPasswordClicked
+        
     }
     
     
@@ -64,7 +74,7 @@ class SignInPageViewController: UIViewController {
             }else{
                 passwordError.isHidden =  true
             }
-                    
+            
         }
         if (passwordTextField.text == ""){
             passwordError.text = "*Required"
@@ -76,7 +86,7 @@ class SignInPageViewController: UIViewController {
     
     @IBAction func signInPressed(_ sender: UIButton) {
         resetForm()
-
+        
     }
     
     
@@ -84,7 +94,7 @@ class SignInPageViewController: UIViewController {
     @IBAction func backToSignUpPageBUTTON(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     
     
     func checkForValidForm(){
@@ -111,8 +121,10 @@ class SignInPageViewController: UIViewController {
         
     }
     
-
+    
 }
+
+
 
 extension SignInPageViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

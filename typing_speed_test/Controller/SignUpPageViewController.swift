@@ -18,6 +18,7 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
     let formValidation = FormValidation()
+    var showPasswordClicked = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,15 @@ class SignUpPageViewController: UIViewController{
 
     @objc func dismissKeyboard(){
         view.endEditing(true)
+    }
+    
+    @IBAction func showPasswordButtonPressed(_ sender: UIButton) {
+        if  showPasswordClicked{
+            passwordTextField.isSecureTextEntry = false
+        }else {
+            passwordTextField.isSecureTextEntry = true
+        }
+        showPasswordClicked = !showPasswordClicked
     }
     
     
@@ -137,6 +147,7 @@ class SignUpPageViewController: UIViewController{
     }
     
 }
+
 
 extension SignUpPageViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
