@@ -235,6 +235,12 @@
                                     <action selector="showPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQT-lZ-C9d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7z-fI-HXM">
+                                <rect key="frame" x="166" y="493" width="216" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forget Password?"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0L-Xl-Lu2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -254,7 +260,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ote-QU-tRy"/>
+        <segue reference="VLx-vD-x4J"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
