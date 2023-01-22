@@ -66,7 +66,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRF-yQ-PlI"/>
-                                    <segue destination="dCe-Pp-zd2" kind="show" identifier="" id="WjR-qf-u5W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wce-gI-3ZQ">
@@ -120,38 +119,12 @@
                         <outlet property="signUpButton" destination="q9X-N8-KVg" id="Qy4-a0-ncr"/>
                         <outlet property="usernameError" destination="cQa-9l-zdw" id="rf5-VF-oiM"/>
                         <outlet property="usernameTextField" destination="oFu-Se-ulM" id="x4g-NX-omx"/>
-                        <segue destination="dCe-Pp-zd2" kind="show" identifier="goToNext" id="9CG-tE-At0"/>
+                        <segue destination="FhW-e7-p5o" kind="show" identifier="goToNext" id="wZd-Md-fbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="63.768115942028992" y="3.3482142857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YPL-vR-Rfl">
-            <objects>
-                <viewController id="dCe-Pp-zd2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lev-Ic-C7O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the person's main profile page" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5qK-JJ-2s5">
-                                <rect key="frame" x="72" y="298" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="3Ze-2h-zee"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="t0F-rO-wa2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Rg-ab-VR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="152" y="883"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Cci-5h-hUc">
@@ -220,16 +193,6 @@
                                     <action selector="passwordEntered:" destination="2nQ-dp-lvR" eventType="editingChanged" id="ss6-cq-cLO"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-9t-WnZ">
-                                <rect key="frame" x="160" y="546" width="76" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
-                                <connections>
-                                    <action selector="signInPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="Ezk-Xz-kQ7"/>
-                                    <segue destination="FhW-e7-p5o" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="VLx-vD-x4J"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ld-Se8">
                                 <rect key="frame" x="38" y="71" width="91" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -263,6 +226,22 @@
                                     <action selector="showPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQT-lZ-C9d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-ZK-l8e">
+                                <rect key="frame" x="225" y="509" width="161" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Forget Passoword"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-9t-WnZ">
+                                <rect key="frame" x="176" y="660" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
+                                <connections>
+                                    <action selector="signInPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="Ezk-Xz-kQ7"/>
+                                    <segue destination="FhW-e7-p5o" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="VLx-vD-x4J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0L-Xl-Lu2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -283,14 +262,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VLx-vD-x4J"/>
-        <segue reference="WjR-qf-u5W"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <image name="eye.circle.fill" catalog="system" width="128" height="123"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
