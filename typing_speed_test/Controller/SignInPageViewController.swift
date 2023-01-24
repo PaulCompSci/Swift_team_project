@@ -90,7 +90,7 @@ class SignInPageViewController: UIViewController {
         guard let password = passwordTextField.text else { return }
         Auth.auth().signIn(withEmail: email, password: password) { firebaseResult, error in
             if let e = error {
-                print("Error");
+                print("Error in Authentification");
             }
             else{
                 // go to homestreen or something

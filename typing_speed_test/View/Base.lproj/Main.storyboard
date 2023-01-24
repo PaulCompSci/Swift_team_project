@@ -131,7 +131,7 @@
             <objects>
                 <viewController id="FhW-e7-p5o" customClass="MainViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kWz-AJ-kWH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperory label for main screen,if the sign in as guest button is press, it will come to this screen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvh-H2-G2g" userLabel="temperoryMessage">
@@ -231,6 +231,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Forget Passoword"/>
+                                <connections>
+                                    <segue destination="ykt-PE-B89" kind="show" id="e6T-zW-goL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxH-9t-WnZ">
                                 <rect key="frame" x="176" y="660" width="76" height="35"/>
@@ -239,7 +242,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
                                 <connections>
                                     <action selector="signInPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="Ezk-Xz-kQ7"/>
-                                    <segue destination="FhW-e7-p5o" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="VLx-vD-x4J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -253,15 +255,73 @@
                         <outlet property="passwordError" destination="txh-rH-41m" id="LpP-W3-bt4"/>
                         <outlet property="passwordTextField" destination="t4y-lX-UwJ" id="YJX-xK-oCe"/>
                         <outlet property="signInButton" destination="yxH-9t-WnZ" id="NU8-L0-tTm"/>
+                        <segue destination="FhW-e7-p5o" kind="show" identifier="goToNext" id="EV9-mh-tWP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoN-5o-71d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1102.8985507246377" y="-408.48214285714283"/>
         </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="io1-PU-RfB">
+            <objects>
+                <viewController id="ykt-PE-B89" customClass="ForgotPasswordViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5I-oP-zqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLH-v0-VCQ">
+                                <rect key="frame" x="107" y="159" width="201" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyQ-8V-nBt">
+                                <rect key="frame" x="66" y="353" width="225" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailEntered:" destination="2nQ-dp-lvR" eventType="editingChanged" id="ri9-1f-fLu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-tI-ZJH">
+                                <rect key="frame" x="155" y="601" width="72" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset "/>
+                                <connections>
+                                    <action selector="reset_isTapped:" destination="ykt-PE-B89" eventType="touchUpInside" id="7fs-9P-XfS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-5a-fOc">
+                                <rect key="frame" x="41" y="80" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title=" back"/>
+                                <connections>
+                                    <action selector="backToPreviousScreenBUTTON:" destination="FhW-e7-p5o" eventType="touchUpInside" id="ySZ-EM-Qaf"/>
+                                    <segue destination="2nQ-dp-lvR" kind="show" id="nBl-Sp-9Dq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jhh-68-0u2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8g2-Bm-8hn"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zyQ-8V-nBt" id="WKh-Py-nnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vE1-tV-ncb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111.594202898551" y="-427.23214285714283"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLx-vD-x4J"/>
+        <segue reference="HQV-hl-CO1"/>
+        <segue reference="EV9-mh-tWP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
