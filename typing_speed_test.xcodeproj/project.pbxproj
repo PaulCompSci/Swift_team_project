@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132388347ADCB9FDDB064DC2 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */; };
+		82B1B0C144A9780393EE4D97 /* Pods_typing_speed_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */; };
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA49F253296E802100162C15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49F252296E802100162C15 /* MainViewController.swift */; };
 		DA6475FE2979C46300326534 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6475FD2979C46300326534 /* validation.swift */; };
 		DAA0E9DD297B7862003C8FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */; };
 		DAA0E9DE297B7862003C8FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */; };
 		DAA0E9DF297B7862003C8FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */; };
-		DAA0E9E2297B7B50003C8FDE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DAA0E9E1297B7B50003C8FDE /* FirebaseAuth */; };
 		DAD0F22B295D4818007013BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22A295D4818007013BE /* AppDelegate.swift */; };
 		DAD0F22D295D4818007013BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22C295D4818007013BE /* SceneDelegate.swift */; };
 		DAD0F22F295D4818007013BE /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F22E295D4818007013BE /* SignUpPageViewController.swift */; };
@@ -24,6 +25,7 @@
 		DAD0F245295D4819007013BE /* typing_speed_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F244295D4819007013BE /* typing_speed_testTests.swift */; };
 		DAD0F24F295D4819007013BE /* typing_speed_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F24E295D4819007013BE /* typing_speed_testUITests.swift */; };
 		DAD0F251295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F250295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift */; };
+		FAA23A09FBB830AE1604A0DB /* Pods_typing_speed_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test_typing_speed_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.debug.xcconfig"; sourceTree = "<group>"; };
+		91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.release.xcconfig"; sourceTree = "<group>"; };
 		DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewController.swift; sourceTree = "<group>"; };
 		DA49F252296E802100162C15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DA6475FD2979C46300326534 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
@@ -63,6 +72,8 @@
 		DAD0F24E295D4819007013BE /* typing_speed_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITests.swift; sourceTree = "<group>"; };
 		DAD0F250295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DAD0F25F295D4D24007013BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA0E9E2297B7B50003C8FDE /* FirebaseAuth in Frameworks */,
+				82B1B0C144A9780393EE4D97 /* Pods_typing_speed_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA23A09FBB830AE1604A0DB /* Pods_typing_speed_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +97,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132388347ADCB9FDDB064DC2 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		666397A54E6D99138A43C159 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */,
+				B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */,
+				0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */,
+				91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */,
+				F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */,
+				3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA49F250296E7DC900162C15 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +152,8 @@
 				DAD0F243295D4819007013BE /* typing_speed_testTests */,
 				DAD0F24D295D4819007013BE /* typing_speed_testUITests */,
 				DAD0F228295D4818007013BE /* Products */,
+				666397A54E6D99138A43C159 /* Pods */,
+				E8CBCD2FA71BAEC945F6D440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +201,16 @@
 			path = typing_speed_testUITests;
 			sourceTree = "<group>";
 		};
+		E8CBCD2FA71BAEC945F6D440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */,
+				5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */,
+				E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,18 +218,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F254295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_test" */;
 			buildPhases = (
+				664C13F337B9CA236E036463 /* [CP] Check Pods Manifest.lock */,
 				DAD0F223295D4818007013BE /* Sources */,
 				DAD0F224295D4818007013BE /* Frameworks */,
 				DAD0F225295D4818007013BE /* Resources */,
+				A0452F24A715A4A20A4651DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = typing_speed_test;
-			packageProductDependencies = (
-				DAA0E9E1297B7B50003C8FDE /* FirebaseAuth */,
-			);
 			productName = typing_speed_test;
 			productReference = DAD0F227295D4818007013BE /* typing_speed_test.app */;
 			productType = "com.apple.product-type.application";
@@ -199,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F257295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_testTests" */;
 			buildPhases = (
+				A0828B80D7590A9D47151E69 /* [CP] Check Pods Manifest.lock */,
 				DAD0F23C295D4819007013BE /* Sources */,
 				DAD0F23D295D4819007013BE /* Frameworks */,
 				DAD0F23E295D4819007013BE /* Resources */,
+				DD147468A43104A8056AB8B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F25A295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_testUITests" */;
 			buildPhases = (
+				00DECB53D6054809A6D5EE12 /* [CP] Check Pods Manifest.lock */,
 				DAD0F246295D4819007013BE /* Sources */,
 				DAD0F247295D4819007013BE /* Frameworks */,
 				DAD0F248295D4819007013BE /* Resources */,
+				785E5E8A4B881D4DFFFE1CE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,9 +305,6 @@
 				Base,
 			);
 			mainGroup = DAD0F21E295D4818007013BE;
-			packageReferences = (
-				DAA0E9E0297B7B4F003C8FDE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
 			productRefGroup = DAD0F228295D4818007013BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -306,6 +345,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DECB53D6054809A6D5EE12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-typing_speed_test-typing_speed_testUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664C13F337B9CA236E036463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-typing_speed_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785E5E8A4B881D4DFFFE1CE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0452F24A715A4A20A4651DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0828B80D7590A9D47151E69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-typing_speed_testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD147468A43104A8056AB8B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAD0F223295D4818007013BE /* Sources */ = {
@@ -490,6 +649,7 @@
 		};
 		DAD0F255295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +677,7 @@
 		};
 		DAD0F256295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +705,7 @@
 		};
 		DAD0F258295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +725,7 @@
 		};
 		DAD0F259295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +745,7 @@
 		};
 		DAD0F25B295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +763,7 @@
 		};
 		DAD0F25C295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -654,25 +819,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DAA0E9E0297B7B4F003C8FDE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DAA0E9E1297B7B50003C8FDE /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DAA0E9E0297B7B4F003C8FDE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DAD0F233295D4818007013BE /* typing_speed_test.xcdatamodeld */ = {

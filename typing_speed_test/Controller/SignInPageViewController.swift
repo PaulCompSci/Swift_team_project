@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInPageViewController: UIViewController {
     
@@ -85,6 +86,19 @@ class SignInPageViewController: UIViewController {
     
     
     @IBAction func signInPressed(_ sender: UIButton) {
+        guard let email = emailTextField.text else {return}
+        guard let password =  passwordTextField.text else{ return }
+    
+            Auth.auth().signIn(withEmail: email, password: password){ firebaseResult, error in
+                if let e = error{
+                    self.showAlert()
+                }
+                else{
+                //go to our homescreen
+                    self.performSegue(withIdentifier:"fromSignInToMain" , sender: self)
+            }
+        }
+        
         resetForm()
         
     }
@@ -121,6 +135,13 @@ class SignInPageViewController: UIViewController {
         
     }
     
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "User log in fail", message: "the email and password you entered did not match our record. Please double check and try again", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alert, animated:true)
+    }
     
 }
 

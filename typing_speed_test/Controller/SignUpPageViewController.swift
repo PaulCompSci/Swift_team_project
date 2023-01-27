@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpPageViewController: UIViewController{
 
@@ -19,9 +20,14 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var signUpButton: UIButton!
     let formValidation = FormValidation()
     var showPasswordClicked = true
+    var ref: DatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         ref = Database.database(url: "https://ios-typing-speed-test-default-rtdb.firebaseio.com/").reference()
+        
         
         //removing keyboard while tapping on empty place
         usernameTextField.delegate = self
@@ -110,6 +116,24 @@ class SignUpPageViewController: UIViewController{
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
+        guard let email = emailTextField.text else {return}
+        guard let password =  passwordTextField.text else{ return }
+        let username  = usernameTextField.text
+        let record  = 0
+    
+            Auth.auth().createUser(withEmail: email, password: password){ firebaseResult, error in
+                if let e = error{
+                    self.showAlert()
+                }
+                else{
+                //go to our homescreen
+                    self.ref.childByAutoId().setValue(["username": username , "email" : email, "password" : password, "highestRecord": record])
+                    self.performSegue(withIdentifier:"goToMain" , sender: self)
+                    
+            }
+        }
+        
         resetForm()
     }
     
@@ -143,7 +167,15 @@ class SignUpPageViewController: UIViewController{
         }
         else{
             signUpButton.isEnabled  = false ;
+            
         }
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Fail to create account", message: "Email already Exists, please try another email account", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alert, animated:true)
     }
     
 }

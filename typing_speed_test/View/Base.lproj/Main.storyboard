@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="sign in as guest"/>
                                 <connections>
-                                    <segue destination="FhW-e7-p5o" kind="presentation" modalPresentationStyle="fullScreen" id="ote-QU-tRy"/>
+                                    <segue destination="FhW-e7-p5o" kind="presentation" identifier="goToMain" modalPresentationStyle="fullScreen" id="ote-QU-tRy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-aV-CAJ" userLabel="create account label">
@@ -162,7 +162,7 @@
         <!--Sign In Page View Controller-->
         <scene sceneID="Ijb-Ih-ggN">
             <objects>
-                <viewController id="2nQ-dp-lvR" customClass="SignInPageViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2nQ-dp-lvR" customClass="SignInPageViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mti-b2-jeh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +199,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
                                 <connections>
                                     <action selector="signInPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="Ezk-Xz-kQ7"/>
-                                    <segue destination="FhW-e7-p5o" kind="presentation" modalPresentationStyle="fullScreen" id="VLx-vD-x4J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ld-Se8">
@@ -252,6 +251,7 @@
                         <outlet property="passwordError" destination="txh-rH-41m" id="LpP-W3-bt4"/>
                         <outlet property="passwordTextField" destination="t4y-lX-UwJ" id="YJX-xK-oCe"/>
                         <outlet property="signInButton" destination="yxH-9t-WnZ" id="NU8-L0-tTm"/>
+                        <segue destination="FhW-e7-p5o" kind="presentation" identifier="fromSignInToMain" modalPresentationStyle="fullScreen" id="aZZ-gr-Ydb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoN-5o-71d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,7 +260,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLx-vD-x4J"/>
+        <segue reference="aZZ-gr-Ydb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
