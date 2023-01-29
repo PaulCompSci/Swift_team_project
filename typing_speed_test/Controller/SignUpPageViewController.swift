@@ -18,11 +18,14 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
+    
     let formValidation = FormValidation()
     var showPasswordClicked = true
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         
         //removing keyboard while tapping on empty place
         usernameTextField.delegate = self
