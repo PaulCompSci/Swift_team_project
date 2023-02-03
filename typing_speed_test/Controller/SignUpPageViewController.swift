@@ -19,14 +19,15 @@ class SignUpPageViewController: UIViewController{
     @IBOutlet weak var passwordError: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
     
+
+    
     let formValidation = FormValidation()
     var showPasswordClicked = true
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        
+
         //removing keyboard while tapping on empty place
         usernameTextField.delegate = self
         emailTextField.delegate = self
@@ -119,12 +120,14 @@ class SignUpPageViewController: UIViewController{
          guard let email = emailTextField.text else{ return }
          guard let password = passwordTextField.text else { return }
         
+        
          Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
              if let e = error {
                  print("error");
              }
              else{
                  // go to homestreen or something
+
                  self.performSegue(withIdentifier: "goToNext", sender: self)
              }
 
