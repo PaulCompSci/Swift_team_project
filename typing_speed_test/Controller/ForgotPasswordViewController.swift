@@ -11,8 +11,6 @@ import Firebase
 class ForgotPasswordViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,13 +29,14 @@ class ForgotPasswordViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 
             }else{
-                self.emailTextField.text = ""
+                
                 let alert = UIAlertController(title: "UNCUCCESS!!", message: "We are unable to sent you a reset password. Make sure that you typed in a correct email.", preferredStyle: .alert)
                 let okeyAction = UIAlertAction(title: "Okay", style: .default){(action) in
                     print(action)
                 }
                 alert.addAction(okeyAction)
                 self.present(alert, animated: true, completion: nil)
+                self.emailTextField.text = ""
                  // reset the textfield
             }
         }
