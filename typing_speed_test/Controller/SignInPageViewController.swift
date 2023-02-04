@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
+ 
+//public var guestUser = UserInfo(username: "user123", userEmail: "no user sign in", userHighScore: 0 , userID: "wekjtqoiweradsfa")
+//var currUser = guestUser
 class SignInPageViewController: UIViewController {
     
     
@@ -17,9 +22,21 @@ class SignInPageViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
+    
+    
+    
     var showPasswordClicked = true
     
+    
+    
+    
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
+        let defaults = UserDefaults.standard
+        
+        
+        ref = Database.database(url: "https://ios-typing-speed-test-default-rtdb.firebaseio.com/").reference()
         super.viewDidLoad()
         emailTextField.delegate = self
         passwordTextField.delegate = self
@@ -86,19 +103,24 @@ class SignInPageViewController: UIViewController {
     
     
     @IBAction func signInPressed(_ sender: UIButton) {
+        
+        
         guard let email = emailTextField.text else {return}
         guard let password =  passwordTextField.text else{ return }
-    
+        
             Auth.auth().signIn(withEmail: email, password: password){ firebaseResult, error in
-                if let e = error{
+                if error != nil{
                     self.showAlert()
                 }
-                else{
-                //go to our homescreen
+                else{   
+                    //go to main page
+                    print("sign in successfully")
+                    guard let userID = Auth.auth().currentUser?.uid else { return }
+                    UserInfo.userID = userID;
+                    print("sign in page : \(UserInfo.userID)")
                     self.performSegue(withIdentifier:"fromSignInToMain" , sender: self)
             }
         }
-        
         resetForm()
         
     }
@@ -106,11 +128,8 @@ class SignInPageViewController: UIViewController {
     
     
     @IBAction func backToSignUpPageBUTTON(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "backToSignIn", sender: self)
     }
-    
-    
-    
     func checkForValidForm(){
         if (emailError.isHidden && passwordError.isHidden){
             signInButton.isEnabled = true ;
@@ -121,14 +140,15 @@ class SignInPageViewController: UIViewController {
     }
     
     
+    
     func resetForm(){
         signInButton.isEnabled = false
         
         emailError.isHidden = false
         passwordError.isHidden = false
         
-        emailError.text = "*Required"
-        passwordError.text = "*Required"
+        emailError.text = ""
+        passwordError.text = ""
         
         emailTextField.text = ""
         passwordTextField.text = ""
@@ -142,6 +162,7 @@ class SignInPageViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alert, animated:true)
     }
+    
     
 }
 

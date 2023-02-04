@@ -22,7 +22,6 @@ class SignUpPageViewController: UIViewController{
     var showPasswordClicked = true
     var ref: DatabaseReference!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,9 +54,7 @@ class SignUpPageViewController: UIViewController{
     
     
     @IBAction func usernameChanged(_ sender: Any) {
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
+        
         
         if let username = usernameTextField.text{
             if let errorMessage = formValidation.invalidUsername(username){
@@ -68,19 +65,12 @@ class SignUpPageViewController: UIViewController{
             }
             
         }
-        if (usernameTextField.text == ""){
-            usernameError.text = "*Required"
-        }
+        
        checkForValidForm()
     }
     
     
     @IBAction func emailChanged(_ sender: Any) {
-        
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
-        
         if let email = emailTextField.text{
             if let errorMessage = formValidation.invalidEmail(email){
                 emailError.text = errorMessage
@@ -94,12 +84,8 @@ class SignUpPageViewController: UIViewController{
         checkForValidForm()
     }
     
+    
     @IBAction func passwordChanged(_ sender: Any) {
-        
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
-        
         if let password = passwordTextField.text{
             if let errorMessage = formValidation.invalidPassword(password){
                 passwordError.text = errorMessage
@@ -109,14 +95,12 @@ class SignUpPageViewController: UIViewController{
             }
                     
         }
-        if (passwordTextField.text == ""){
-            passwordError.text = "*Required"
-        }
+        
         checkForValidForm()
     }
     
+    
     @IBAction func signUpButtonPressed(_ sender: Any) {
-        
         guard let email = emailTextField.text else {return}
         guard let password =  passwordTextField.text else{ return }
         let username  = usernameTextField.text
@@ -128,13 +112,20 @@ class SignUpPageViewController: UIViewController{
                 }
                 else{
                 //go to our homescreen
-                    self.ref.childByAutoId().setValue(["username": username , "email" : email, "password" : password, "highestRecord": record])
-                    self.performSegue(withIdentifier:"goToMain" , sender: self)
-                    
+                    guard let userID = Auth.auth().currentUser?.uid else { return }
+                    self.ref.child("Users").child(userID).setValue(["username": username ,"email": email,  "password":password, "highestRecord": record])
+                    UserInfo.userID = userID
+                    print(UserInfo.userID)
+                    self.performSegue(withIdentifier:"signUpSuccessfultoMain" , sender: self)
             }
         }
-        
         resetForm()
+    }
+    
+    
+    @IBAction func signInAsGuestPressed(_ sender: Any) {
+        UserInfo.userID = "randomuser123"
+        self.performSegue(withIdentifier: "signInAsGuesttoMain", sender: self)
     }
     
 
@@ -148,9 +139,9 @@ class SignUpPageViewController: UIViewController{
         usernameError.isHidden = false
         passwordError.isHidden = false
         
-        emailError.text = "*Required"
-        usernameError.text = "*Required"
-        passwordError.text = "*Required"
+        emailError.text = ""
+        usernameError.text = ""
+        passwordError.text = ""
         
         usernameTextField.text = ""
         emailTextField.text = ""

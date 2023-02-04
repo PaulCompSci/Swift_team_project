@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="sign in as guest"/>
                                 <connections>
-                                    <segue destination="FhW-e7-p5o" kind="presentation" identifier="goToMain" modalPresentationStyle="fullScreen" id="ote-QU-tRy"/>
+                                    <action selector="signInAsGuestPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a3i-6x-GcU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-aV-CAJ" userLabel="create account label">
@@ -68,21 +68,21 @@
                                     <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRF-yQ-PlI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wce-gI-3ZQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wce-gI-3ZQ">
                                 <rect key="frame" x="88" y="390" width="314" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.91976243260000001" green="0.011259747549999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-9l-zdw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-9l-zdw">
                                 <rect key="frame" x="88" y="337" width="314" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.91976243260000001" green="0.011259747549999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsY-to-f5L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsY-to-f5L">
                                 <rect key="frame" x="88" y="451" width="300" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -111,6 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mhC-nt-dy6"/>
                     <connections>
                         <outlet property="emailError" destination="wce-gI-3ZQ" id="b9D-vG-Uvq"/>
                         <outlet property="emailTextField" destination="hwd-9K-Da0" id="KOv-Io-5q9"/>
@@ -119,11 +120,13 @@
                         <outlet property="signUpButton" destination="q9X-N8-KVg" id="Qy4-a0-ncr"/>
                         <outlet property="usernameError" destination="cQa-9l-zdw" id="rf5-VF-oiM"/>
                         <outlet property="usernameTextField" destination="oFu-Se-ulM" id="x4g-NX-omx"/>
+                        <segue destination="FhW-e7-p5o" kind="modal" identifier="signUpSuccessfultoMain" modalPresentationStyle="fullScreen" id="q6d-QH-QkJ"/>
+                        <segue destination="FhW-e7-p5o" kind="presentation" identifier="signInAsGuesttoMain" modalPresentationStyle="fullScreen" id="iF0-IQ-9ed"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.768115942028992" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="12" y="-382"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Cci-5h-hUc">
@@ -134,26 +137,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperory label for main screen,if the sign in as guest button is press, it will come to this screen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvh-H2-G2g" userLabel="temperoryMessage">
-                                <rect key="frame" x="67" y="287" width="281" height="322"/>
+                                <rect key="frame" x="67" y="477" width="281" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-bY-Yu4">
-                                <rect key="frame" x="32" y="104" width="91" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6P4-ia-zUX" userLabel="usernameLabel">
+                                <rect key="frame" x="87" y="431" width="229" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooo-Ht-cI7" userLabel="highestLabelRecord">
+                                <rect key="frame" x="87" y="336" width="229" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="highscore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88B-hY-eZn" userLabel="emailLabel">
+                                <rect key="frame" x="87" y="505" width="229" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzG-Go-5SY">
+                                <rect key="frame" x="103" y="177" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title=" back"/>
+                                <buttonConfiguration key="configuration" style="filled" title="sign out "/>
                                 <connections>
-                                    <action selector="backToPreviousScreenBUTTON:" destination="FhW-e7-p5o" eventType="touchUpInside" id="0JP-ZS-mj8"/>
+                                    <action selector="signOutButtonPressed:" destination="FhW-e7-p5o" eventType="touchUpInside" id="Fix-4F-g1E"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksg-2x-8zb" userLabel="welcomeLabel">
+                                <rect key="frame" x="87" y="262" width="229" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ytX-at-yOy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="lKO-K7-7QJ"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Ooo-Ht-cI7" id="Jvm-r2-BDW"/>
+                        <outlet property="highestRecordLabel" destination="88B-hY-eZn" id="k2a-sp-GAz"/>
+                        <outlet property="usernameLabel" destination="6P4-ia-zUX" id="Cdp-Fa-6IB"/>
+                        <outlet property="welcomeLabel" destination="Ksg-2x-8zb" id="OnT-if-W04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYN-q2-ntr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,15 +238,6 @@
                                     <action selector="signInPressed:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="Ezk-Xz-kQ7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ld-Se8">
-                                <rect key="frame" x="38" y="71" width="91" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title="back "/>
-                                <connections>
-                                    <action selector="backToSignUpPageBUTTON:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="cMJ-11-SPx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txh-rH-41m">
                                 <rect key="frame" x="83" y="451" width="263" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,6 +268,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forget Password?"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ld-Se8">
+                                <rect key="frame" x="43" y="76" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title="back "/>
+                                <connections>
+                                    <action selector="backToSignUpPageBUTTON:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="cMJ-11-SPx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0L-Xl-Lu2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -252,15 +289,16 @@
                         <outlet property="passwordTextField" destination="t4y-lX-UwJ" id="YJX-xK-oCe"/>
                         <outlet property="signInButton" destination="yxH-9t-WnZ" id="NU8-L0-tTm"/>
                         <segue destination="FhW-e7-p5o" kind="presentation" identifier="fromSignInToMain" modalPresentationStyle="fullScreen" id="aZZ-gr-Ydb"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="backToSignIn" modalPresentationStyle="fullScreen" id="agd-br-Hw9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoN-5o-71d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102.8985507246377" y="-408.48214285714283"/>
+            <point key="canvasLocation" x="1341" y="-644"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aZZ-gr-Ydb"/>
+        <segue reference="iF0-IQ-9ed"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
