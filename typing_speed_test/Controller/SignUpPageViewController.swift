@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  typing_speed_test
 //
-//  Created by Paul on 2022-12-28.
-//
+
 
 import UIKit
 import Firebase

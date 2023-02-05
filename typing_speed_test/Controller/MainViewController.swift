@@ -2,7 +2,6 @@
 //  Main.swift
 //  typing_speed_test
 //
-//  Created by Paul on 2023-01-10.
 //
 
 import UIKit
