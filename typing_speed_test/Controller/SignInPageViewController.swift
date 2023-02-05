@@ -33,7 +33,7 @@ class SignInPageViewController: UIViewController {
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
-        let defaults = UserDefaults.standard
+        
         
         
         ref = Database.database(url: "https://ios-typing-speed-test-default-rtdb.firebaseio.com/").reference()

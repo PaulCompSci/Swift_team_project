@@ -1,0 +1,6 @@
+framework module Pods_typing_speed_test_typing_speed_testUITests {
+  umbrella header "Pods-typing_speed_test-typing_speed_testUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

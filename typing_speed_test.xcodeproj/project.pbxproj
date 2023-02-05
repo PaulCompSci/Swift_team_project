@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132388347ADCB9FDDB064DC2 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */; };
-		82B1B0C144A9780393EE4D97 /* Pods_typing_speed_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */; };
+		8BA74532386BBAC3F6DDBFED /* Pods_typing_speed_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A8F9C1D7ECA378473D84FF /* Pods_typing_speed_testTests.framework */; };
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA15C8092986337E00C002B2 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15C8082986337E00C002B2 /* userInfo.swift */; };
 		DA49F253296E802100162C15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49F252296E802100162C15 /* MainViewController.swift */; };
@@ -26,7 +25,8 @@
 		DAD0F245295D4819007013BE /* typing_speed_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F244295D4819007013BE /* typing_speed_testTests.swift */; };
 		DAD0F24F295D4819007013BE /* typing_speed_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F24E295D4819007013BE /* typing_speed_testUITests.swift */; };
 		DAD0F251295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0F250295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift */; };
-		FAA23A09FBB830AE1604A0DB /* Pods_typing_speed_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */; };
+		E35CF153E8C2948EA2748B23 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BE4BC7EDB2F1734FF3E333 /* Pods_typing_speed_test_typing_speed_testUITests.framework */; };
+		F27C26A3EC705B4DF3F5EA01 /* Pods_typing_speed_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B283DD696F6E0B62A8D7F693 /* Pods_typing_speed_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.release.xcconfig"; sourceTree = "<group>"; };
-		5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test_typing_speed_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.debug.xcconfig"; sourceTree = "<group>"; };
-		91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.release.xcconfig"; sourceTree = "<group>"; };
+		25BE4BC7EDB2F1734FF3E333 /* Pods_typing_speed_test_typing_speed_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test_typing_speed_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FF0AC530424C1C7BE16F0B /* Pods-typing_speed_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.debug.xcconfig"; sourceTree = "<group>"; };
+		4F5428DB9F5CBBFEFF5C5E3A /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98DA6650DDBCFB17BC70CA8E /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D28B5F978E66C8523F908DC /* Pods-typing_speed_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AACBC90E6D196A846A76F20B /* Pods-typing_speed_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.release.xcconfig"; sourceTree = "<group>"; };
+		B283DD696F6E0B62A8D7F693 /* Pods_typing_speed_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0BD787FC632134E2E7BB97 /* Pods-typing_speed_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewController.swift; sourceTree = "<group>"; };
 		DA15C8082986337E00C002B2 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
 		DA49F252296E802100162C15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +75,7 @@
 		DAD0F24E295D4819007013BE /* typing_speed_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITests.swift; sourceTree = "<group>"; };
 		DAD0F250295D4819007013BE /* typing_speed_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typing_speed_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DAD0F25F295D4D24007013BE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_testTests.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A8F9C1D7ECA378473D84FF /* Pods_typing_speed_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B1B0C144A9780393EE4D97 /* Pods_typing_speed_test.framework in Frameworks */,
+				F27C26A3EC705B4DF3F5EA01 /* Pods_typing_speed_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA23A09FBB830AE1604A0DB /* Pods_typing_speed_testTests.framework in Frameworks */,
+				8BA74532386BBAC3F6DDBFED /* Pods_typing_speed_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132388347ADCB9FDDB064DC2 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */,
+				E35CF153E8C2948EA2748B23 /* Pods_typing_speed_test_typing_speed_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,14 +109,24 @@
 		666397A54E6D99138A43C159 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */,
-				B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */,
-				0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */,
-				91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */,
-				F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */,
-				3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */,
+				36FF0AC530424C1C7BE16F0B /* Pods-typing_speed_test.debug.xcconfig */,
+				AACBC90E6D196A846A76F20B /* Pods-typing_speed_test.release.xcconfig */,
+				98DA6650DDBCFB17BC70CA8E /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */,
+				4F5428DB9F5CBBFEFF5C5E3A /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */,
+				9D28B5F978E66C8523F908DC /* Pods-typing_speed_testTests.debug.xcconfig */,
+				BA0BD787FC632134E2E7BB97 /* Pods-typing_speed_testTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C15DE99D15CF9DE37F49D6DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B283DD696F6E0B62A8D7F693 /* Pods_typing_speed_test.framework */,
+				25BE4BC7EDB2F1734FF3E333 /* Pods_typing_speed_test_typing_speed_testUITests.framework */,
+				E3A8F9C1D7ECA378473D84FF /* Pods_typing_speed_testTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DA49F250296E7DC900162C15 /* View */ = {
@@ -155,7 +165,7 @@
 				DAD0F24D295D4819007013BE /* typing_speed_testUITests */,
 				DAD0F228295D4818007013BE /* Products */,
 				666397A54E6D99138A43C159 /* Pods */,
-				E8CBCD2FA71BAEC945F6D440 /* Frameworks */,
+				C15DE99D15CF9DE37F49D6DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,16 +213,6 @@
 			path = typing_speed_testUITests;
 			sourceTree = "<group>";
 		};
-		E8CBCD2FA71BAEC945F6D440 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5FE44ECADE0850981061CFFC /* Pods_typing_speed_test.framework */,
-				5CC6AA277D01412D8CC8362A /* Pods_typing_speed_test_typing_speed_testUITests.framework */,
-				E54018004BE9D49D3720F9C1 /* Pods_typing_speed_testTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,11 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F254295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_test" */;
 			buildPhases = (
-				664C13F337B9CA236E036463 /* [CP] Check Pods Manifest.lock */,
+				381CD52A0D9BB18584924CD7 /* [CP] Check Pods Manifest.lock */,
 				DAD0F223295D4818007013BE /* Sources */,
 				DAD0F224295D4818007013BE /* Frameworks */,
 				DAD0F225295D4818007013BE /* Resources */,
-				A0452F24A715A4A20A4651DC /* [CP] Embed Pods Frameworks */,
+				79F32F7D59750074D50BBA53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,11 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F257295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_testTests" */;
 			buildPhases = (
-				A0828B80D7590A9D47151E69 /* [CP] Check Pods Manifest.lock */,
+				5571AA3F259753D751900285 /* [CP] Check Pods Manifest.lock */,
 				DAD0F23C295D4819007013BE /* Sources */,
 				DAD0F23D295D4819007013BE /* Frameworks */,
 				DAD0F23E295D4819007013BE /* Resources */,
-				DD147468A43104A8056AB8B0 /* [CP] Embed Pods Frameworks */,
+				3C8B083C286F02FF0A071D5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,11 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAD0F25A295D4819007013BE /* Build configuration list for PBXNativeTarget "typing_speed_testUITests" */;
 			buildPhases = (
-				00DECB53D6054809A6D5EE12 /* [CP] Check Pods Manifest.lock */,
+				39EF4FB99CBDCB927B0B9A76 /* [CP] Check Pods Manifest.lock */,
 				DAD0F246295D4819007013BE /* Sources */,
 				DAD0F247295D4819007013BE /* Frameworks */,
 				DAD0F248295D4819007013BE /* Resources */,
-				785E5E8A4B881D4DFFFE1CE4 /* [CP] Embed Pods Frameworks */,
+				D0CC243D0A0A9AAE29A608AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,29 +349,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DECB53D6054809A6D5EE12 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-typing_speed_test-typing_speed_testUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		664C13F337B9CA236E036463 /* [CP] Check Pods Manifest.lock */ = {
+		381CD52A0D9BB18584924CD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,41 +371,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		785E5E8A4B881D4DFFFE1CE4 /* [CP] Embed Pods Frameworks */ = {
+		39EF4FB99CBDCB927B0B9A76 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-typing_speed_test-typing_speed_testUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0452F24A715A4A20A4651DC /* [CP] Embed Pods Frameworks */ = {
+		3C8B083C286F02FF0A071D5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0828B80D7590A9D47151E69 /* [CP] Check Pods Manifest.lock */ = {
+		5571AA3F259753D751900285 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,21 +432,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD147468A43104A8056AB8B0 /* [CP] Embed Pods Frameworks */ = {
+		79F32F7D59750074D50BBA53 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_testTests/Pods-typing_speed_testTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0CC243D0A0A9AAE29A608AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -652,7 +652,7 @@
 		};
 		DAD0F255295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6947DD3A62D7779D92CEEF3C /* Pods-typing_speed_test.debug.xcconfig */;
+			baseConfigurationReference = 36FF0AC530424C1C7BE16F0B /* Pods-typing_speed_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -680,7 +680,7 @@
 		};
 		DAD0F256295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C0D95E8927963E5A52ABB0 /* Pods-typing_speed_test.release.xcconfig */;
+			baseConfigurationReference = AACBC90E6D196A846A76F20B /* Pods-typing_speed_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -708,7 +708,7 @@
 		};
 		DAD0F258295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7198F87BA9CA7CAE3A7284C /* Pods-typing_speed_testTests.debug.xcconfig */;
+			baseConfigurationReference = 9D28B5F978E66C8523F908DC /* Pods-typing_speed_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -728,7 +728,7 @@
 		};
 		DAD0F259295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3338C503309578102B7B3645 /* Pods-typing_speed_testTests.release.xcconfig */;
+			baseConfigurationReference = BA0BD787FC632134E2E7BB97 /* Pods-typing_speed_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -748,7 +748,7 @@
 		};
 		DAD0F25B295D4819007013BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0797024CF25066D676C3C92C /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */;
+			baseConfigurationReference = 98DA6650DDBCFB17BC70CA8E /* Pods-typing_speed_test-typing_speed_testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -766,7 +766,7 @@
 		};
 		DAD0F25C295D4819007013BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91916211386DED44284352A1 /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */;
+			baseConfigurationReference = 4F5428DB9F5CBBFEFF5C5E3A /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
