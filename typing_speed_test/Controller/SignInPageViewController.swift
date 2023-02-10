@@ -163,6 +163,10 @@ class SignInPageViewController: UIViewController {
         present(alert, animated:true)
     }
     
+    @IBAction func forgetPasswordButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToResetPasswordPage"
+, sender: self)
+    }
     
 }
 

@@ -11,6 +11,7 @@
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA15C8092986337E00C002B2 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15C8082986337E00C002B2 /* userInfo.swift */; };
 		DA49F253296E802100162C15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49F252296E802100162C15 /* MainViewController.swift */; };
+		DA621D752996FC040055646A /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA621D742996FC040055646A /* ForgetPasswordViewController.swift */; };
 		DA6475FE2979C46300326534 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6475FD2979C46300326534 /* validation.swift */; };
 		DAA0E9DD297B7862003C8FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */; };
 		DAA0E9DE297B7862003C8FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */; };
@@ -58,6 +59,7 @@
 		DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewController.swift; sourceTree = "<group>"; };
 		DA15C8082986337E00C002B2 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
 		DA49F252296E802100162C15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DA621D742996FC040055646A /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		DA6475FD2979C46300326534 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
 		DAA0E9DC297B7862003C8FDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DAD0F227295D4818007013BE /* typing_speed_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = typing_speed_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */,
 				DAD0F22E295D4818007013BE /* SignUpPageViewController.swift */,
 				DA49F252296E802100162C15 /* MainViewController.swift */,
+				DA621D742996FC040055646A /* ForgetPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				DAD0F235295D4818007013BE /* typing_speed_test.xcdatamodeld in Sources */,
 				DAD0F22F295D4818007013BE /* SignUpPageViewController.swift in Sources */,
 				DA6475FE2979C46300326534 /* validation.swift in Sources */,
+				DA621D752996FC040055646A /* ForgetPasswordViewController.swift in Sources */,
 				DA15C8092986337E00C002B2 /* userInfo.swift in Sources */,
 				DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */,
 				DAD0F22B295D4818007013BE /* AppDelegate.swift in Sources */,
