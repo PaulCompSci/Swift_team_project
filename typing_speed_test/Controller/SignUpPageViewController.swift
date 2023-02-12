@@ -104,7 +104,9 @@ class SignUpPageViewController: UIViewController{
         guard let email = emailTextField.text else {return}
         guard let password =  passwordTextField.text else{ return }
         let username  = usernameTextField.text
-        let record  = 0
+        let record1 = 0
+        let record2 = 0
+        let record3 = 0
     
             Auth.auth().createUser(withEmail: email, password: password){ firebaseResult, error in
                 if let e = error{
@@ -113,7 +115,7 @@ class SignUpPageViewController: UIViewController{
                 else{
                 //go to our homescreen
                     guard let userID = Auth.auth().currentUser?.uid else { return }
-                    self.ref.child("Users").child(userID).setValue(["username": username ,"email": email,  "password":password, "highestRecord": record])
+                    self.ref.child("Users").child(userID).setValue(["username": username! ,"email": email ,"60second": record1, "30second" : record2, "15second": record3])
                     UserInfo.userID = userID
                     print(UserInfo.userID)
                     self.performSegue(withIdentifier:"signUpSuccessfultoMain" , sender: self)

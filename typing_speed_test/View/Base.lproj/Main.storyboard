@@ -215,7 +215,7 @@
                                 <rect key="frame" x="83" y="325" width="225" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <action selector="emailEntered:" destination="2nQ-dp-lvR" eventType="editingChanged" id="82N-ob-54A"/>
                                 </connections>
@@ -330,6 +330,15 @@
                                     <action selector="resetButtonPressed:" destination="fh8-Zj-exL" eventType="touchUpInside" id="fig-aX-4ah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifk-c4-NzX">
+                                <rect key="frame" x="40" y="77" width="114" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.backward" catalog="system" title="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="fh8-Zj-exL" eventType="touchUpInside" id="KWd-ls-MZD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B9L-Qg-evG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -337,15 +346,18 @@
                     <navigationItem key="navigationItem" id="Ftr-oG-RdB"/>
                     <connections>
                         <outlet property="resetPasswordTextField" destination="jsj-Xf-S4v" id="FLh-CL-hym"/>
+                        <segue destination="2nQ-dp-lvR" kind="presentation" identifier="forgetPasswordPageBackToSignIn" id="P6X-GP-HVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsb-2y-JUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.68115942029" y="-443.30357142857139"/>
+            <point key="canvasLocation" x="2270" y="-623"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="q6d-QH-QkJ"/>
+        <segue reference="GNj-J3-NlI"/>
+        <segue reference="P6X-GP-HVr"/>
+        <segue reference="aZZ-gr-Ydb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>

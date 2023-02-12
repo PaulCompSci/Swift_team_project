@@ -46,4 +46,7 @@ class ForgetPasswordViewController: UIViewController {
     }
     
 
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "forgetPasswordPageBackToSignIn", sender: self)
+    }
 }
