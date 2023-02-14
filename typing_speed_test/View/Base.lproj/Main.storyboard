@@ -339,23 +339,43 @@
                                     <action selector="backButtonPressed:" destination="fh8-Zj-exL" eventType="touchUpInside" id="KWd-ls-MZD"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7n-IZ-wYz">
+                                <rect key="frame" x="74" y="341" width="279" height="38.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lX0-0X-c4J">
+                                <rect key="frame" x="74" y="341" width="279" height="38.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3J-2P-713">
+                                <rect key="frame" x="74" y="387" width="170" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.91976243260000001" green="0.011259747549999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B9L-Qg-evG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ftr-oG-RdB"/>
                     <connections>
-                        <outlet property="resetPasswordTextField" destination="jsj-Xf-S4v" id="FLh-CL-hym"/>
+                        <outlet property="emailError" destination="W3J-2P-713" id="N6j-tB-ftM"/>
+                        <outlet property="resetButton" destination="FrO-pX-Pxj" id="Lv3-6J-xGs"/>
+                        <outlet property="resetPasswordTextField" destination="lX0-0X-c4J" id="fPF-qN-jKg"/>
                         <segue destination="2nQ-dp-lvR" kind="presentation" identifier="forgetPasswordPageBackToSignIn" id="P6X-GP-HVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsb-2y-JUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="-623"/>
+            <point key="canvasLocation" x="2269.5652173913045" y="-623.4375"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GNj-J3-NlI"/>
         <segue reference="P6X-GP-HVr"/>
         <segue reference="aZZ-gr-Ydb"/>
     </inferredMetricsTieBreakers>

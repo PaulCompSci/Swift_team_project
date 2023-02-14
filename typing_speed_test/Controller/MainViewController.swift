@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
         
         
         super.viewDidLoad()
+        //TODO : MODIFY when designing this page
+        
         ref = Database.database(url: "https://ios-typing-speed-test-default-rtdb.firebaseio.com/").reference()
         ref.child("Users").child(UserInfo.userID).observeSingleEvent(of: .value, with: { snapshot in
             let value = snapshot.value as? NSDictionary
@@ -51,7 +53,7 @@ class MainViewController: UIViewController {
                 try auth.signOut()
                 UserInfo.userID = "randomuser123"
                 self.dismiss(animated: true , completion: nil)
-            }catch let signOutError{
+            }catch _{
                 print("you fail to sign out")
             }
             

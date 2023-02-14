@@ -86,16 +86,16 @@ class SignUpPageViewController: UIViewController{
     
     
     @IBAction func passwordChanged(_ sender: Any) {
-        if let password = passwordTextField.text{
-            if let errorMessage = formValidation.invalidPassword(password){
-                passwordError.text = errorMessage
-                passwordError.isHidden = false
-            }else{
+//        if let password = passwordTextField.text{
+//            if let errorMessage = formValidation.invalidPassword(password){
+//                passwordError.text = errorMessage
+//                passwordError.isHidden = false
+//            }else{
                 passwordError.isHidden =  true
-            }
-                    
-        }
-        
+//            }
+//
+//        }
+
         checkForValidForm()
     }
     
@@ -109,7 +109,7 @@ class SignUpPageViewController: UIViewController{
         let record3 = 0
     
             Auth.auth().createUser(withEmail: email, password: password){ firebaseResult, error in
-                if let e = error{
+                if error != nil{
                     self.showAlert()
                 }
                 else{
@@ -117,7 +117,6 @@ class SignUpPageViewController: UIViewController{
                     guard let userID = Auth.auth().currentUser?.uid else { return }
                     self.ref.child("Users").child(userID).setValue(["username": username! ,"email": email ,"60second": record1, "30second" : record2, "15second": record3])
                     UserInfo.userID = userID
-                    print(UserInfo.userID)
                     self.performSegue(withIdentifier:"signUpSuccessfultoMain" , sender: self)
             }
         }

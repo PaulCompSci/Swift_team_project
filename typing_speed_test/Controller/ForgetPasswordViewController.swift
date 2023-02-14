@@ -12,14 +12,30 @@ import FirebaseAuth
 class ForgetPasswordViewController: UIViewController {
     
     
+    @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var resetPasswordTextField: UITextField!
+    @IBOutlet weak var resetButton: UIButton!
+    let formValidation = FormValidation()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //tap empty space to dismiss keyboard
+        resetPasswordTextField.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        resetForm()
+        
     }
     
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
+    
+
 
     @IBAction func resetButtonPressed(_ sender: Any) {
         Auth.auth().sendPasswordReset(withEmail: resetPasswordTextField.text!){ (error) in
@@ -27,9 +43,11 @@ class ForgetPasswordViewController: UIViewController {
                 let alert = UIAlertController(title: "Sent!", message: "An email has been sent to you to reset your password", preferredStyle: .alert)
                 let okeyAction = UIAlertAction(title: "Okay", style: .default){(action) in
                     print(action)
+                    
                 }
                 alert.addAction(okeyAction)
                 self.present(alert, animated: true, completion: nil)
+                self.resetPasswordTextField.text = ""
                 
             }else{
                 
@@ -39,14 +57,30 @@ class ForgetPasswordViewController: UIViewController {
                 }
                 alert.addAction(okeyAction)
                 self.present(alert, animated: true, completion: nil)
+                // reset the textfield
                 self.resetPasswordTextField.text = ""
-                 // reset the textfield
+                 
             }
         }
     }
     
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "forgetPasswordPageBackToSignIn", sender: self)
+        performSegue(withIdentifier: "forgetPasswordPageBackToSignIn", sender:
+                        self)
+    }
+    
+    
+    func resetForm(){
+        resetButton.isEnabled = true
+        emailError.text = ""
+        resetPasswordTextField.text = ""
+    }
+}
+
+extension ForgetPasswordViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ resetPasswordTextField: UITextField) -> Bool {
+        resetPasswordTextField.resignFirstResponder() // dismiss keyboard
+        return true
     }
 }

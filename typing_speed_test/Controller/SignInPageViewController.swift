@@ -62,9 +62,9 @@ class SignInPageViewController: UIViewController {
     
     
     @IBAction func emailEntered(_ sender: Any) {
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
+//        if (emailTextField.text ){
+//            emailError.text = "*Required"
+//        }
         
         if let email = emailTextField.text{
             if let errorMessage = formValidation.invalidEmail(email){
@@ -81,22 +81,22 @@ class SignInPageViewController: UIViewController {
     
     
     @IBAction func passwordEntered(_ sender: UITextField) {
-        if (emailTextField.text == ""){
-            emailError.text = "*Required"
-        }
-        
-        if let password = passwordTextField.text{
-            if let errorMessage = formValidation.invalidPassword(password){
-                passwordError.text = errorMessage
-                passwordError.isHidden = false
-            }else{
+//        if (emailTextField.text == ""){
+//            emailError.text = "*Required"
+//        }
+//
+//        if let password = passwordTextField.text{
+//            if let errorMessage = formValidation.invalidPassword(password){
+//                passwordError.text = errorMessage
+//                passwordError.isHidden = false
+//            }else{
                 passwordError.isHidden =  true
-            }
-            
-        }
-        if (passwordTextField.text == ""){
-            passwordError.text = "*Required"
-        }
+//            }
+//
+//        }
+//        if (passwordTextField.text == ""){
+//            passwordError.text = "*Required"
+//        }
         checkForValidForm()
     }
     
