@@ -78,6 +78,8 @@ class ForgetPasswordViewController: UIViewController {
     }
 }
 
+
+//dimiss keyboard when return key is pressed
 extension ForgetPasswordViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ resetPasswordTextField: UITextField) -> Bool {
         resetPasswordTextField.resignFirstResponder() // dismiss keyboard
