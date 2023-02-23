@@ -18,7 +18,7 @@ class ForgetPasswordViewController: UIViewController {
     let formValidation = FormValidation()
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
         
         //tap empty space to dismiss keyboard
