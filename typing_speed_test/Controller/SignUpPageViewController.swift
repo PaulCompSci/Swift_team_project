@@ -125,7 +125,8 @@ class SignUpPageViewController: UIViewController{
     
     
     @IBAction func signInAsGuestPressed(_ sender: Any) {
-        UserInfo.userID = "randomuser123"
+        UserInfo.userID = "randomuser123" // right now i think we are making a new id for the guset
+        // i think this could create a problem because many people can sign in as guest users
         self.performSegue(withIdentifier: "signInAsGuesttoMain", sender: self)
     }
     

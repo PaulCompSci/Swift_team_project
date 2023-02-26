@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2A5B2B29AAD96C00748318 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A5B2A29AAD96C00748318 /* ProfileViewController.swift */; };
 		8BA74532386BBAC3F6DDBFED /* Pods_typing_speed_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A8F9C1D7ECA378473D84FF /* Pods_typing_speed_testTests.framework */; };
 		DA0C91E4296E8428002E9B34 /* SignInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C91E3296E8428002E9B34 /* SignInPageViewController.swift */; };
 		DA15C8092986337E00C002B2 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA15C8082986337E00C002B2 /* userInfo.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2A5B2A29AAD96C00748318 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		25BE4BC7EDB2F1734FF3E333 /* Pods_typing_speed_test_typing_speed_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_speed_test_typing_speed_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FF0AC530424C1C7BE16F0B /* Pods-typing_speed_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test.debug.xcconfig"; path = "Target Support Files/Pods-typing_speed_test/Pods-typing_speed_test.debug.xcconfig"; sourceTree = "<group>"; };
 		4F5428DB9F5CBBFEFF5C5E3A /* Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; path = "Target Support Files/Pods-typing_speed_test-typing_speed_testUITests/Pods-typing_speed_test-typing_speed_testUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				DAD0F22E295D4818007013BE /* SignUpPageViewController.swift */,
 				DA49F252296E802100162C15 /* MainViewController.swift */,
 				DA621D742996FC040055646A /* ForgetPasswordViewController.swift */,
+				1D2A5B2A29AAD96C00748318 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			files = (
 				DA49F253296E802100162C15 /* MainViewController.swift in Sources */,
 				DAD0F235295D4818007013BE /* typing_speed_test.xcdatamodeld in Sources */,
+				1D2A5B2B29AAD96C00748318 /* ProfileViewController.swift in Sources */,
 				DAD0F22F295D4818007013BE /* SignUpPageViewController.swift in Sources */,
 				DA6475FE2979C46300326534 /* validation.swift in Sources */,
 				DA621D752996FC040055646A /* ForgetPasswordViewController.swift in Sources */,

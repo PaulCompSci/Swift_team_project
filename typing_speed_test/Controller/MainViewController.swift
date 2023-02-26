@@ -31,11 +31,11 @@ class MainViewController: UIViewController {
         ref.child("Users").child(UserInfo.userID).observeSingleEvent(of: .value, with: { snapshot in
             let value = snapshot.value as? NSDictionary
             let username = value?["username"] as? String ?? ""
-            let emailLabel = value?["email"] as? String ?? "n/a"
-            let highestRecord = value?["60Second"] as? Int ?? 0
+//            let emailLabel = value?["email"] as? String ?? "n/a"
+//            let highestRecord = value?["60Second"] as? Int ?? 0
             self.usernameLabel.text = username
-            self.highestRecordLabel.text = String(highestRecord)
-            self.emailLabel.text = emailLabel
+//            self.highestRecordLabel.text = String(highestRecord)
+//            self.emailLabel.text = emailLabel
             
         })
                           
