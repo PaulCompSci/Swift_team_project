@@ -232,6 +232,16 @@
                                     <action selector="signOutButtonPressed:" destination="FhW-e7-p5o" eventType="touchUpInside" id="Fix-4F-g1E"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYs-G4-KQ2">
+                                <rect key="frame" x="44" y="56" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title="back "/>
+                                <connections>
+                                    <action selector="backToSignUpPageBUTTON:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="I3g-jn-0ep"/>
+                                    <segue destination="2nQ-dp-lvR" kind="show" identifier="goToSignIn" id="xia-Fk-o9x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ytX-at-yOy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -473,6 +483,7 @@
                                 <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.backward" catalog="system" title="back "/>
                                 <connections>
                                     <action selector="backToSignUpPageBUTTON:" destination="2nQ-dp-lvR" eventType="touchUpInside" id="d9i-0p-om2"/>
+                                    <segue destination="FhW-e7-p5o" kind="show" identifier="goToMain" id="woN-Z1-JSC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -494,7 +505,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HQV-hl-CO1"/>
+        <segue reference="xia-Fk-o9x"/>
         <segue reference="aZZ-gr-Ydb"/>
     </inferredMetricsTieBreakers>
     <resources>
