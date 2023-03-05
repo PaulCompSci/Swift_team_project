@@ -423,10 +423,10 @@
             </objects>
             <point key="canvasLocation" x="2269.5652173913045" y="-623.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="DIT-d4-gQw">
             <objects>
-                <viewController id="0dr-Wr-x9f" sceneMemberID="viewController">
+                <viewController id="0dr-Wr-x9f" customClass="ProfileViewController" customModule="typing_speed_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22N-19-070">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +480,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TWG-Bh-qzb"/>
+                    <connections>
+                        <outlet property="currentRankLabel" destination="zrX-w1-TqJ" id="Ibz-yo-9hD"/>
+                        <outlet property="fifteenLabel" destination="4rG-V8-eK1" id="wT9-kh-JcV"/>
+                        <outlet property="sixtyLabel" destination="Ykl-by-fI4" id="dbL-AL-F38"/>
+                        <outlet property="thirtyLabel" destination="oVl-Kn-uhc" id="sZ9-gL-zCi"/>
+                        <outlet property="usernameLabel" destination="LTk-ZW-aFY" id="2bP-nw-uIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHN-fD-dy2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
